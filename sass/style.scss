@@ -1,4 +1,26 @@
-body{
-    background-color: aqua;
-    color: beige;
+@charset "UTF-8";
+/*reset des calibrages mis à 0 de tous les éléments*/
+/**@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");/*
+
+/*import de la police*/
+/*Shrikhand:logos et titres uniquement*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*Shrikhand:logos et titres uniquement*/
+h1 {
+  font-family: 'Shrikhand', cursive;
 }
+
+/*Roboto: texte*/
+p h3 h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*palette couleurs*/
+
+  $colorPurple: #9356dc;
+  $colorPink: #ff79da;
+  $colorGreen: #99e2d0;
+  $colorBlack: #000;
+  $colorWhite: #fff;
+
+/*# sourceMappingURL=style.css.map */
