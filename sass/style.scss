@@ -1,26 +1,94 @@
-@charset "UTF-8";
+@import "./2.utils/variables";
+
 /*reset des calibrages mis à 0 de tous les éléments*/
 /**@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");/*
 
 /*import de la police*/
 /*Shrikhand:logos et titres uniquement*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/*Shrikhand:logos et titres uniquement*/
-h1 {
-  font-family: 'Shrikhand', cursive;
-}
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 /*Roboto: texte*/
-p h3 h2 {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
   font-family: 'Roboto', sans-serif;
 }
 
-/*palette couleurs*/
-
-  $colorPurple: #9356dc;
-  $colorPink: #ff79da;
-  $colorGreen: #99e2d0;
-  $colorBlack: #000;
-  $colorWhite: #fff;
 
 /*# sourceMappingURL=style.css.map */
+
+/*body*/
+body{
+  margin: auto;
+  padding: 0px;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*Header*/
+header { 
+  div.logo {
+    font-size: 100px;
+    display: block;
+    margin: auto;
+    background-color: $colorPurple;
+    img {
+     width: 250px;
+    }
+  }   
+}
+
+/*Main*/
+.functioning__Step{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    .purpleButton{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 1em;
+      margin: 0.5em 1em 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+      color: $colorBlack;
+      border-radius: 25px ;
+      box-shadow: 0 10px 25px 0 $colorGrey;
+        .number{
+          position: relative;
+          left: -2em;
+          background-color: $colorPurple;
+          color: $colorWhite;
+          border-radius: 100%;
+          height: 25px;
+          width: 28px;
+          padding-top: 5px;
+          text-align: center;
+            
+        }
+    }
+}
+.purpleButton p{
+  margin-left:1em ;
+}
+
+.purpleButton i{
+  color: $colorGrey;
+}
+
+.functioning__Step {
+    a.purpleButton:hover{
+        background-color: $colorPurple;
+        }
+      }
+
+/*footer*/
+footer {
+  background-color: $colorBlack;
+  color: $colorWhite;
+  padding: 1em ;
+}
+.title{
+      font-family: 'Shrikhand', cursive;
+}
