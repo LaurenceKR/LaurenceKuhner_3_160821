@@ -1,5 +1,11 @@
 @charset "UTF-8";
 /*palette couleurs*/
+/*picto*/
+/*localisation*/
+/*presentation*/
+/*box shadow*/
+/*boutons rose violet*/
+/*cards des menus*/
 /*reset des calibrages mis à 0 de tous les éléments*/
 /**@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");/*
 
@@ -8,9 +14,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /*Roboto: texte*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-* {
-  font-family: 'Roboto', sans-serif;
-}
 /*body*/
 body {
   margin: auto;
@@ -29,18 +32,96 @@ body {
 }
 
 /*Header*/
-header div.logo {
-  font-size: 100px;
-  display: block;
-  margin: auto;
-  background-color: #9356dc;
-}
-
 header div.logo img {
-  width: 250px;
+  width: 200px;
+  display: block;
+  margin: 1.5em auto 1.5em auto;
 }
 
 /*Main*/
+.presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presentation .presentation__Place {
+  background-color: #fafafa;
+  width: 100%;
+  line-height: 3em;
+}
+
+.presentation .presentation__Place .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 1em;
+}
+
+.presentation .presentation__Place .location .field {
+  background-color: transparent;
+  border: 0;
+  padding: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.presentation__Text {
+  background-color: #f1efef;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  line-height: 5em;
+  margin: 0 1em 1em 1em;
+}
+
+.presentation__Text .button1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  border: 0;
+  border-radius: 25px;
+  padding: 1.5em;
+  width: 250px;
+  color: #fff;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, right top, from(#ff79da), to(#9356dc));
+  background: linear-gradient(90deg, #ff79da, #9356dc);
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*boutons fonctionnement*/
 .functioning__Step {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,8 +133,51 @@ header div.logo img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
 }
 
+.functioning__Step .Button2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  margin: 0.5em 1em 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 10px 25px 0 #D0D3D4;
+          box-shadow: 0 10px 25px 0 #D0D3D4;
+}
+
+.functioning__Step .Button2 .number {
+  position: relative;
+  left: -2em;
+  background-color: #9356dc;
+  color: #fff;
+  border-radius: 100%;
+  height: 25px;
+  width: 28px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.Button2 p {
+  margin-left: 1em;
+}
+
+.Button2 i {
+  color: #D0D3D4;
+}
+
+/* BOUTON MAUVE*/
 .functioning__Step .purpleButton {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,6 +195,7 @@ header div.logo img {
   font-weight: bold;
   color: #000;
   border-radius: 25px;
+  background-color: #f2c8ee;
   -webkit-box-shadow: 0 10px 25px 0 #D0D3D4;
           box-shadow: 0 10px 25px 0 #D0D3D4;
 }
@@ -92,21 +217,277 @@ header div.logo img {
 }
 
 .purpleButton i {
-  color: #D0D3D4;
+  color: #9356dc;
 }
 
-.functioning__Step a.purpleButton:hover {
-  background-color: #9356dc;
+/*Partie Restaurant*/
+article {
+  background-color: #f1efef;
+  font-family: 'Roboto', sans-serif;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+article .restoList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+article .restoList .restoList__cards {
+  border-radius: 15px;
+  border: none;
+  width: 500px;
+  height: 300px;
+  margin: 10px 0px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 10px 25px 0 #D0D3D4;
+          box-shadow: 0 10px 25px 0 #D0D3D4;
+}
+
+article .restoList .restoList__cards img {
+  border-radius: 15px 15px 0 0;
+  height: 240px;
+  width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-left: 0px;
+}
+
+.restoList__cards a {
+  text-decoration: none;
+  color: #000;
+}
+
+.restoList__cards h3 {
+  padding: 0 0 0 1em;
+  margin: 0 0 0.2em 0;
+}
+
+.restoList__cards p {
+  padding: 0 0 0 1em;
+  margin: 0;
+}
+
+/*coeur index*/
+.heartIndex {
+  position: relative;
+  left: 24em;
+  top: -2em;
+  font-size: 1.2em;
 }
 
 /*footer*/
 footer {
   background-color: #000;
   color: #fff;
+  padding: 1em 0 2em 1em;
+}
+
+footer .resto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .resto i {
+  padding-right: 1em;
+}
+
+footer .title p {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.2em;
+}
+
+footer .partner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+footer .partner i {
+  font-size: 0.8em;
+  padding-right: 1em;
+}
+
+footer p {
+  font-family: 'Roboto', sans-serif;
+}
+
+footer a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+
+/*header pages resto*/
+.headerResto a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 2em 1em 0em 1em;
+  color: #000;
+  text-decoration: none;
+}
+
+.logoMenu img {
+  width: 300px;
+  margin-left: 4em;
+}
+
+.headerResto a:hover {
+  color: #000;
+}
+
+.coverImage img {
+  width: 500px;
+  height: 250px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  z-index: -1;
+}
+
+.button1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  border: 0;
+  border-radius: 25px;
+  padding: 1.5em;
+  width: 250px;
+  color: #fff;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, right top, from(#ff79da), to(#9356dc));
+  background: linear-gradient(90deg, #ff79da, #9356dc);
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+}
+
+.smallCards {
+  -webkit-box-shadow: 0 10px 25px 0 #D0D3D4;
+          box-shadow: 0 10px 25px 0 #D0D3D4;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 0.8em;
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+}
+
+.smallCards .smallCards_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.smallCards .smallCards_left .smallCards_left-Title {
+  font-weight: bold;
+}
+
+.subtitles {
+  font-family: 'Roboto', sans-serif;
+  margin-left: 0.8em;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  width: 50px;
+  border-bottom: 3px solid #99e2d0;
+}
+
+.smallCards_price {
+  font-weight: bold;
+}
+
+main {
+  background-color: #fafafa;
+  border-radius: 40px 40px 0 0px;
+  z-index: 1;
+  position: relative;
+  margin-top: 210px;
+  padding-bottom: 2em;
+  width: 500px;
+}
+
+main .mainTittle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 1em;
 }
 
-.title {
-  font-family: 'Shrikhand', cursive;
+main .mainTittle .heartMenu {
+  font-size: 1.5em;
 }
 /*# sourceMappingURL=style.css.map */

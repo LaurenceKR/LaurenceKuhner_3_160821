@@ -1,0 +1,41 @@
+/*box shadow*/
+@mixin shadow {
+ box-shadow: 0 10px 25px 0 #D0D3D4;
+    }
+  
+/*boutons rose violet*/
+ @mixin button1{
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   justify-content: center;
+   margin: auto;
+   border: 0;
+   border-radius: 25px;
+   padding: 1.5em;
+   width: 250px;
+   color: $colorWhite;
+   font-weight: bold;
+   background: linear-gradient(90deg, $colorPink, $colorPurple);
+ }
+
+ /*cards des menus*/
+ @mixin smallCards {
+  box-shadow: 0 10px 25px 0 #D0D3D4;
+  background-color: $colorWhite;
+  border-radius: 15px;
+  margin: 0.8em;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family:'Roboto', sans-serif;
+    .smallCards_left{
+      display: flex;
+      flex-direction: column;
+       .smallCards_left-Title{
+         font-weight: bold;
+       }
+    }
+  }
